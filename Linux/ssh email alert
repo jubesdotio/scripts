@@ -1,0 +1,7 @@
+# Add me to .bashrc
+# Update script with [Host] and [Email]
+# Login Alert
+IP="$(echo $SSH_CONNECTION | awk '{print $1}')"
+HOSTNAME=$(hostname)
+NOW=$(date +"%e %b %Y, %a %r")
+echo 'Someone from '$IP' logged into '$HOSTNAME' on '$NOW'.' | mail -s "[Host] Login Alert" [Email]

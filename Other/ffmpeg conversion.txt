@@ -1,0 +1,1 @@
+ffmpeg -i "Input File" -vf scale=320:240 -vcodec libx264 -acodec aac "Output File"
